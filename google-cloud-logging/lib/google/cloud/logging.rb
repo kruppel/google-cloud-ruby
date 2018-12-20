@@ -136,6 +136,9 @@ module Google
       # * `labels` - (Hash) User defined labels. A `Hash` of label names to
       #   string label values or callables/`Proc` which are functions of the
       #   Rack environment.
+      # * `on_error` - (Proc) A Proc to be run when an error is encountered
+      #   on a background thread. The Proc must take the error object as the
+      #   single argument. (See {AsyncWriter.on_error}.)
       #
       # See the [Configuration
       # Guide](https://googleapis.github.io/google-cloud-ruby/docs/stackdriver/latest/file.INSTRUMENTATION_CONFIGURATION)
